@@ -15,9 +15,9 @@ LED::LED(MGPIO_enuPortDesignator_t _port, MGPIO_enuPinDesignator_t _pin, HLED_en
 
 void LED::HLED_voidTurnOn()
 {
-    this->MGPIO_enuSetPinVal(this->connection ^ LED_ON == 1 ? PIN_HIGH : PIN_LOW);
+    this->MGPIO_enuSetPinVal((this->connection ^ LED_ON) == 1 ? PIN_HIGH : PIN_LOW);
 }
 void LED::HLED_voidTurnOff()
 {
-    this->MGPIO_enuSetPinVal(this->connection ^ LED_ON == 1 ? PIN_LOW : PIN_HIGH);
+    this->MGPIO_enuSetPinVal((this->connection ^ LED_OFF) == 0 ? PIN_LOW : PIN_HIGH);
 }

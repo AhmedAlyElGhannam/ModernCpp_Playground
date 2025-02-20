@@ -1,6 +1,9 @@
 #ifndef ERROR_STATUS_H
 #define ERROR_STATUS_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 typedef enum
 {
@@ -31,6 +34,11 @@ typedef enum
     LCD_BUSY,
     LCD_BUF_OVF,
 } SRV_enuErrorStatus_t;
+
+
+#ifdef __cplusplus
+}
+#endif
 
 
 #endif

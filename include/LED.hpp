@@ -17,14 +17,15 @@ typedef enum
 
 class LED : protected GPIO
 {
-    protected:
-        HLED_enuLEDConnection_t connection;
     public:
         LED();
         LED(MGPIO_enuPortDesignator_t _port, MGPIO_enuPinDesignator_t _pin, HLED_enuLEDConnection_t _connection);
 
         void HLED_voidTurnOn();
         void HLED_voidTurnOff();
+
+    protected:
+        HLED_enuLEDConnection_t connection;
 };
 
 #endif

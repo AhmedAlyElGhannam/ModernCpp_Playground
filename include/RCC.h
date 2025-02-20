@@ -6,6 +6,13 @@
 #ifndef RCC_H
 #define RCC_H
 
+#include "error_status.h"
+#include "std_types.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /**
  * @defgroup RCC_AHB1_Bus AHB1 Bus Definitions
  * @{
@@ -636,7 +643,9 @@ extern SRV_enuErrorStatus_t MRCC_enuSetPLLSpreadSpectrumConfig(MRCC_structSpeadS
  * @}
  */
 
-
+#ifdef __cplusplus
+}
+#endif
 
 
 

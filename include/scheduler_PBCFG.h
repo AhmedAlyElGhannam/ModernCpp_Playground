@@ -1,6 +1,0 @@
-#ifndef SCHEDULER_PBCFG_H
-#define SCHEDULER_PBCFG_H
-
-#define SCHEDULER_MAX_TASKS 5
-
-#endif
